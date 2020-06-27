@@ -12,7 +12,7 @@ from PIL import Image
 #Above error occurs if object is not in a list format
 
 # image
-img = Image.open("D:/python pycharm/Imarticus _Project/RORARA circle.png")
+img = Image.open("D:/python pycharm/Imarticus _Project/RORARA.png")
 st.image(img,width=175)
 
 #st.title("Mercari Price Prediction")
