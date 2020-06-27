@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run mercari heroku.py
+web: sh setup.sh && streamlit run mercari_heroku.py
