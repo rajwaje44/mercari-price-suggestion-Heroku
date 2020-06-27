@@ -12,7 +12,7 @@ from PIL import Image
 #Above error occurs if object is not in a list format
 
 # image
-img = Image.open("D:/python pycharm/Imarticus Project/RORARA circle.png")
+img = Image.open("D:/python pycharm/Imarticus _Project/RORARA circle.png")
 st.image(img,width=175)
 
 #st.title("Mercari Price Prediction")
@@ -44,7 +44,7 @@ if st.button("Predict"):
     nndff[sc2] = 1
     nndff.fillna(value=0, inplace=True)
 
-    rf_model = joblib.load("D:/python pycharm/Imarticus Project/model_rf.pkl")
+    rf_model = joblib.load("D:/python pycharm/Imarticus _Project/model_rf.pkl")
     predictor = rf_model
     n = predictor.predict(nndff)
     value = np.exp(n)
