@@ -44,7 +44,7 @@ if st.button("Predict"):
     nndff[sc2] = 1
     nndff.fillna(value=0, inplace=True)
 
-    rf_model = joblib.load("D:/python pycharm/Imarticus _Project/model_rf.pkl")
+    rf_model = joblib.load("D:/python pycharm/Imarticus _Project/ridgeReg.pkl")
     predictor = rf_model
     n = predictor.predict(nndff)
     value = np.exp(n)
